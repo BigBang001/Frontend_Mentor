@@ -56,18 +56,13 @@
             databaseURL: "https://frontend-mentor-cceee-default-rtdb.firebaseio.com"
         };
 
-
-      
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
 
-       
         const db = getFirestore(app); 
 
-       
         const auth = getAuth();
 
-      
         const form = document.getElementById('signupForm');
         form.addEventListener('submit', async (e) => {
             e.preventDefault();  
